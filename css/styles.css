@@ -3,7 +3,7 @@ body {
   color: var(--defoultColor);
 }
 
-.ul-none-decoration {
+ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -26,6 +26,7 @@ p {
   --whiteColor: #ffff;
   --defoultColor: #2e2f42;
   --irisColor: #4d5ae5;
+  --cloudColor: #f4f4fd;
 }
 
 *:focus {
@@ -158,14 +159,12 @@ p {
 /* main */
 
 .button {
-  width: 170px;
-  height: 50px;
   background-color: var(--irisColor);
   color: var(--whiteColor);
   border: none;
   border-radius: 4px;
 
-  padding: 0;
+  padding: 16px 32px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -189,6 +188,17 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.background {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .second-background {
@@ -320,6 +330,11 @@ footer {
 }
 
 .team-cards h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.team-cards p {
   margin-bottom: 8px;
 }
 
@@ -401,4 +416,118 @@ footer {
 
 .margin {
   margin-bottom: -48px;
+}
+
+.section-castomers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-castomers h2 {
+  text-align: center;
+}
+
+/* svg */
+
+.list-benefits .heading-tree::before {
+  display: block;
+  content: "";
+  height: 112px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px;
+  background-color: #f4f4fd;
+
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--irisColor);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.icon-svg {
+  fill: var(--cloudColor);
+}
+
+.icon-contacts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.companys {
+  display: flex;
+  justify-content: space-around;
+}
+
+.customers-svg {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.color-company {
+  fill: #8e8f99;
+}
+
+.customers-svg:hover .color-company,
+.customers-svg:hover {
+  fill: var(--irisColor);
+  border-color: var(--irisColor);
+}
+
+.footer-contain {
+  display: flex;
+}
+
+.footer h3 {
+  margin-bottom: 16px;
+}
+
+.footer-contain div {
+  margin-right: 120px;
+}
+
+.footer-contain div:last-of-type {
+  margin-right: 0px;
+}
+
+.footer-contain h3 {
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: var(--defoultTextSpacing);
+}
+
+.footer .icon {
+  background-color: #ffffff1a;
+}
+
+.footer .icon-contacts li {
+  margin-right: 16px;
+}
+
+.footer .icon-contacts li:last-of-type {
+  margin-right: 0px;
 }
