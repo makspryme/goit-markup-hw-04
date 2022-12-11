@@ -1,0 +1,404 @@
+body {
+  font-family: Roboto;
+  color: var(--defoultColor);
+}
+
+.ul-none-decoration {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+:root {
+  --defoultTextSpacing: 0.02em;
+  --lineHeight: 1.5;
+  --fontWeight: 600;
+  --whiteColor: #ffff;
+  --defoultColor: #2e2f42;
+  --irisColor: #4d5ae5;
+}
+
+*:focus {
+  outline-color: var(--irisColor);
+}
+
+/* container */
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.section-padding {
+  padding-bottom: 120px;
+}
+
+.section-position {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+}
+
+/* navigation */
+
+.navigaton-position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation:nth-child(n) {
+  display: flex;
+}
+
+.list:nth-child(n) {
+  margin-right: 40px;
+}
+
+.list:last-child {
+  margin-right: 0;
+}
+
+.nav-text {
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: var(--fontWeight);
+  line-height: var(--lineHeight);
+  letter-spacing: var(--defoultTextSpacing);
+  text-decoration: none;
+
+  color: var(--defoultColor);
+
+  padding: 24px 0;
+}
+
+.nav-text:hover {
+  color: var(--irisColor);
+}
+
+.logo {
+  display: inline-block;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.nav > .logo {
+  margin-right: 77px;
+}
+
+.logo-web {
+  color: var(--irisColor);
+}
+
+.logo-studio {
+  color: var(--defoultColor);
+}
+
+.white {
+  color: #f4f4fd;
+}
+
+.contacts-position {
+  margin-left: auto;
+}
+
+.contacts {
+  margin-right: 40px;
+}
+
+.contacts:last-of-type {
+  margin-right: 0;
+}
+
+.contacts {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: var(--lineHeight);
+  letter-spacing: var(--defoultTextSpacing);
+
+  text-decoration: none;
+
+  color: #434455;
+}
+
+.contacts:hover {
+  color: var(--irisColor);
+}
+
+/* main */
+
+.button {
+  width: 170px;
+  height: 50px;
+  background-color: var(--irisColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 4px;
+
+  padding: 0;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: var(--fontWeight);
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #404bbf;
+}
+
+.first-background {
+  background-color: var(--defoultColor);
+  height: 603px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.second-background {
+  background-color: #f4f4fd;
+  margin-bottom: 0;
+}
+
+.heading {
+  font-size: 56px;
+  letter-spacing: var(--defoultTextSpacing);
+  text-align: center;
+  width: 496px;
+  margin-bottom: 48px;
+  color: var(--whiteColor);
+}
+
+.heading-two {
+  font-size: 36px;
+  font-weight: var(--fontWeight);
+  letter-spacing: var(--defoultTextSpacing);
+
+  color: var(--defoultColor);
+
+  margin-bottom: 72px;
+}
+
+.heading-tree {
+  font-size: 20px;
+  font-weight: var(--fontWeight);
+  line-height: var(--lineHeight);
+  letter-spacing: var(--defoultTextSpacing);
+
+  color: var(--defoultColor);
+
+  margin-bottom: 8px;
+}
+
+.space {
+  margin-right: 24px;
+}
+
+.space:last-of-type {
+  margin: 0;
+}
+
+.footer-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: var(--lineHeight);
+  letter-spacing: var(--defoultTextSpacing);
+
+  color: #e7e9fc;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: var(--lineHeight);
+  letter-spacing: var(--defoultTextSpacing);
+
+  color: #434455;
+}
+
+.button-portfolio {
+  font-size: 16px;
+  font-weight: var(--fontWeight);
+  line-height: var(--lineHeight);
+
+  letter-spacing: 0.04em;
+
+  padding: 8px 16px;
+
+  background-color: #f4f4fd;
+  color: var(--irisColor);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.button-portfolio:hover {
+  background-color: var(--irisColor);
+  color: var(--whiteColor);
+}
+
+.button-portfolio:active {
+  background-color: #404bbf;
+  color: var(--whiteColor);
+}
+
+footer {
+  background-color: var(--defoultColor);
+  color: var(--whiteColor);
+
+  padding: 100px 0;
+}
+
+.ul-benefits {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-benefits {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+  width: 264px;
+}
+
+.list-benefits:last-of-type {
+  margin-right: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-team-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-cards {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  margin-right: 24px;
+}
+
+.team-cards h3 {
+  margin-bottom: 8px;
+}
+
+.team-cards:last-of-type {
+  margin-right: 0;
+}
+
+.text-padding {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.team-cards .text-padding {
+  text-align: center;
+}
+
+.list-cards-job .text-padding {
+  padding-left: 16px;
+}
+
+.footer-logo {
+  margin-bottom: 16px;
+}
+
+/* .footer-content {
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
+.footer-paragraph {
+  width: 264px;
+}
+
+/* portfolio.html */
+
+.header-potfolio {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.section-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.button-position {
+  display: flex;
+}
+
+.list-job {
+  margin-right: 24px;
+}
+
+.portfolio-position {
+  margin-bottom: 72px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.row-works {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list-cards-job {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  width: calc((100% - 48px) / 3);
+
+  margin-bottom: 48px;
+}
+
+.margin {
+  margin-bottom: -48px;
+}
