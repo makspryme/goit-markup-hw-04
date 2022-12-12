@@ -279,10 +279,12 @@ p {
   cursor: pointer;
 }
 
-.button-portfolio:hover {
+.button-portfolio:hover, .button-portfolio:focus {
   background-color: var(--irisColor);
   color: var(--whiteColor);
 }
+
+
 
 .button-portfolio:active {
   background-color: #404bbf;
@@ -327,6 +329,8 @@ footer {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   margin-right: 24px;
+
+  background-color: var(--whiteColor);
 }
 
 .team-cards h3 {
@@ -335,7 +339,7 @@ footer {
 }
 
 .team-cards p {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .team-cards:last-of-type {
@@ -415,6 +419,7 @@ footer {
 }
 
 .list-cards-job:hover {
+  transition: 0.5s;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -434,7 +439,7 @@ footer {
 
 /* svg */
 
-.list-benefits .heading-tree::before {
+.list-benefits::before {
   display: block;
   content: "";
   height: 112px;
@@ -472,6 +477,10 @@ footer {
   border-radius: 50%;
 }
 
+.icon:focus {
+  background-color: #31d0aa;
+}
+
 .icon-svg {
   fill: var(--cloudColor);
 }
@@ -489,7 +498,12 @@ footer {
 .customers-svg {
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  padding: 16px 32px;
+  width: 168px;
+  height: 88px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .color-company {
